@@ -458,7 +458,7 @@ menu>li>a:hover {
    color: #7C3AED;
 }
 
-
+/*--------- СТИЛИ ДЛЯ ЭКРАНОВ ДО 960px ---------*/
 @media (max-width: 960px) {
 
    menu {
@@ -560,6 +560,7 @@ menu>li>a:hover {
 
 }
 
+/*--------- СТИЛИ ДЛЯ ЭКРАНОВ ДО 576px ---------*/
 @media (max-width: 576px) {
    .content {
       padding: 0px 16px;
