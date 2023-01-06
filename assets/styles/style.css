@@ -1,4 +1,4 @@
-*{
+body{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
@@ -46,6 +46,7 @@ menu>li>a {
    font-weight: 600;
    font-size: 14px;
    line-height: 20px;
+   color: #111827;
 }
 
 menu>li>a:hover {
@@ -421,6 +422,43 @@ menu>li>a:hover {
    align-self: flex-end;
 }
 
+/*----------------- СТИЛИ БЛОКА FOOTER --------------------*/
+.footer {
+   background-color: #000;
+   color: #FFFFFF;
+}
+
+.colum {
+   display: flex;
+   justify-content: space-between;
+   padding: 64px 0;
+}
+
+.app {
+   display: grid;
+   gap: 16px;
+}
+
+.about {
+   display: grid;
+   gap: 24px;
+}
+
+.text-items {
+   display: flex;
+   gap: 16px;
+}
+
+.text-items>a {
+   text-decoration: none;
+   color: #fff;
+}
+
+.text-items>a:hover {
+   color: #7C3AED;
+}
+
+
 @media (max-width: 960px) {
 
    menu {
@@ -602,6 +640,15 @@ menu>li>a:hover {
       display: grid;
       grid-template-columns: 1fr;
       justify-items: center;
+   }
+
+   .colum {
+      flex-direction: column;
+      gap: 32px;
+  }
+  
+  .text-items {
+      flex-wrap: wrap;
    }
 
 }
